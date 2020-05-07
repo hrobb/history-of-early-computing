@@ -1,16 +1,12 @@
 .bd-navbar {
-    position: sticky;
     top: 0;
-}
-
-.bd-sidebar {
     position: sticky;
-    top: 4rem;
-    height: calc(90vh - 4rem);
+    z-index: 1071;
+    background-color: black;
 }
 
 #sidebarNav {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .sidebar-links {
@@ -22,12 +18,23 @@
     padding: 0 3rem 0 3rem
 }
 
+.img-fluid {
+    padding: 2rem;
+}
+
 .bd-content-title-container {
-    margin-top: 2rem;
+    padding-top: 5rem;
 }
 
 #footerText {
     bottom: 0;
     text-align: right;
     padding-right: 1rem;
+}
+
+@media (min-width: 1140px) {
+    .bd-sidebar {
+        position: sticky;
+        height: calc(90vh - 4rem);
+    }
 }
